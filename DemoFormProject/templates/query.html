@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2 style="font-family:'Futura Std'">{{title}}</h2>
+
+<h4><i>Type in an address in new york to see how many rolling sales were in that address during 2016 and the long and lat coordinates</i></h4>
+
+
+    <form method=post>
+        {{ form.csrf }}
+        <table>
+            <tr>
+                <td class="input text"> {{ form.name.label }} </td>
+                <td>                    {{ form.name }}       </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="input submit"> <input type="submit" value="Capital"> </td>
+            </tr>
+        </table>
+    </form>
+
+    <p><h1>In {{Country}}, there were <b>{{name}} rolling sales in 2016</b></h1></p>
+
+    <h3> Table is </h3>
+    {{ raw_data_table | safe}}
+
+
+    {% endblock %}
+
+

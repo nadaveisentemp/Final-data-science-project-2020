@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="custom-jumbotron">
+    <h2  style="font-family:'Futura Std'">New York City Data Science Project: Mapping criminal, civil and real estate activity</h2>
+    <p><i>Data page will appear after you login or register</i></p>
+</div>
+
+<div class="row">
+
+    <div class="col-md-4">
+        <h2 style="font-family:'Futura Std'">Project and study topic</h2>
+        <p>
+            Being one of the largest and most well known metropoles, NYC has a lot of real estate and
+            criminal/civil activity. In my project, I used four different datasets and a goecoding API
+            (goepy) to see the relationship between civil complaints, criminal actity, and aribnb rentals
+            in all boroughs of new york.
+        </p>
+        <p><a class="btn btn-default" href="https://www1.nyc.gov/">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <img src={{ new_york_pic }} alt="Smiley face" height="270" width="360" style="border-radius: 15px 50px">
+    </div>
+    <div class="col-md-4">
+        <h2 style="font-family:'Futura Std'">Background on NYC</h2>
+        <p>
+            In 1664, the British seized New Amsterdam from the Dutch and gave it a new name: New York City.
+            For the next century, the population of New York City grew larger and more diverse. During the 18th century, NYC
+            became a critical place for anti-british american colonial activity, but sadly, the city
+            fell to the british a month after the united states of america declared their indpendence (august
+            1776) and served as an English millitary base until 1783. However, after the United States of America
+            fully gained their independence, NYC slowly started evolving into the metropolis we know today, with it
+            being having ports critical to the American economy in the 19th century, and in the 20th century, all five boroughs
+            agreed to unite into one city, which at the time, they called a "Greater New York". However, the construction of new
+            highways and suburbs after WW2 encouraged many people to leave the city, but then, the city became refilled with the diverse
+            immigrant population we know today after the Hart-Cellar Immigration and Nationality Act of 1965. And today, it is a massive
+            and well known five-borough metropolis that inhabits 8 million people (3.1 million of which are immigrants) and attracts 40
+            million tourists yearly. 
+        </p>
+        <p><a class="btn btn-default" href="https://www.history.com/topics/us-states/new-york-city">Learn more &raquo;</a></p>
+    </div>
+
+</div>
+
+{% endblock %}

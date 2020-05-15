@@ -1,0 +1,78 @@
+﻿﻿{% extends "layout.html" %}
+{% block content %}
+
+<div class="row">
+
+    <div class="col-md-4">
+        <h2 style="font-family:'Futura Std'">Airbnb sales:</h2>
+        <p>
+            Airbnb sales tend to represent how many affordable residential buildings are in a certain area. This was definitely the case with the 2016 NYC airbnb sales as represented on an NYC map here:
+        </p>
+        <h4>
+            Reference map of NYC:
+        </h4>
+        <img src="/static/Pics/newYorkMap.png" width="350" height="400" />
+        <h4>
+            Map of NYC with Airbnb sales:
+        </h4>
+        <img src="/static/Pics/airbnbMap.png" width="350" height="400" />
+        <h5>
+            3D Bar graph of airbnb sales, x = latitude, y = longitude, z = amount of airbnbs sold in that square area:
+        </h5>
+        <img src="/static/Pics/barGraphAirbnb.png" width="350" height="350" />
+        <p>
+            The bar graph data shows that the zone with the most airbnb sales was brooklyn, not manhattan, because of the more affordable housing.
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2 style="font-family:'Futura Std'">Crime rates:</h2>
+        <p>
+            Crime rates in a certain area tend to represent how wealthy the district is or how generally active it is, without any relevant relationship to population numbers.
+        </p>
+        <h4>
+            Reference map of NYC:
+        </h4>
+        <img src="/static/Pics/newYorkMap.png" width="350" height="400" />
+        <h4>
+            Map of NYC crime rates:
+        </h4>
+        <img src="/static/Pics/crimeRatesMap.png" width="350" height="400" />
+        <h5>
+            3D Bar graph of airbnb sales, x = latitude, y = longitude, z = amount of crimes reported in that square area:
+        </h5>
+        <img src="/static/Pics/crimeRatesBarGraph.png" width="350" height="350" />
+        <p>
+            The bar graph data shows that the two zones with the most crime are manhattan and brooklyn, which was a little suprising to me but they are very active boroughs
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2 style="font-family:'Futura Std'">Party complaints:</h2>
+        <p>
+            Crime rates in a certain area tend to represent how wealthy the district is or how generally active it is, without any relevant relationship to population numbers.
+        </p>
+        <h4>
+            Reference map of NYC:
+        </h4>
+        <img src="/static/Pics/newYorkMap.png" width="350" height="400" />
+        <h4>
+            Map of NYC party complaints:
+        </h4>
+        <img src="/static/Pics/partyMap.png" width="350" height="400" />
+        <h5>
+            3D Bar graph of airbnb sales, x = latitude, y = longitude, z = amount of party complaints in that square area:
+        </h5>
+        <img src="/static/Pics/partyBarGraph.png" width="350" height="350" />
+        <p>
+            The bar graph data shows that the two zones with the most crime were also manhattan and brooklyn, now isnt much of a suprise considering their activity
+        </p>
+    </div>
+
+</div>
+<h2 style="font-family:'Futura Std'">Datasets:</h2>
+<a class="btn btn-default" href="{{ url_for('DataSet1') }}">Aribnb sales &raquo;</a>
+<a class="btn btn-default" href="{{ url_for('DataSet2') }}">Real estate sales &raquo;</a>
+<a class="btn btn-default" href="{{ url_for('DataSet3') }}">Criminal reports &raquo;</a>
+<a class="btn btn-default" href="{{ url_for('DataSet4') }}">Party complaints &raquo;</a>
+
+
+{% endblock %}
