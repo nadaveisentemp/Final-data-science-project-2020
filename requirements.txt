@@ -4,3 +4,4 @@ MatPlotLib
 Flask_wtf
 requests
 flask-bootstrap
+geopy

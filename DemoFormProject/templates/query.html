@@ -16,14 +16,37 @@
             </tr>
             <tr>
                 <td></td>
-                <td class="input submit"> <input type="submit" value="Capital"> </td>
+                <td class="input submit"> <input type="submit" value="Search"> </td>
             </tr>
         </table>
     </form>
 
     <p><h1>In {{Country}}, there were <b>{{name}} rolling sales in 2016</b></h1></p>
 
-    <h3> Table is </h3>
+    <div class="row">
+
+        <div class="col-md-4">
+            <h5>
+                Scatter map of airbnb sales in NYC, the red dot represents the location of the address you gave
+            </h5>
+            <img src={{qAirbnb}} width="350" height="350" />
+        </div>
+        <div class="col-md-4">
+            <h5>
+                Scatter map of crime reports in NYC, the red dot represents the location of the address you gave
+            </h5>
+            <img src={{qCrime}} width="350" height="350" />
+        </div>
+        <div class="col-md-4">
+            <h5>
+                Scatter map of party complaints in NYC, the red dot represents the location of the address you gave
+            </h5>
+            <img src={{qParty}} width="350" height="350" />
+        </div>
+
+    </div>
+
+    <h3> Table:</h3>
     {{ raw_data_table | safe}}
 
 

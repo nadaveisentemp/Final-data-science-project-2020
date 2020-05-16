@@ -33,6 +33,9 @@
     <Compile Include="DemoFormProject\Models\LocalDatabaseRoutines.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DemoFormProject\Models\plot_service_functions.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="DemoFormProject\Models\QueryFormStructure.py">
       <SubType>Code</SubType>
     </Compile>
@@ -61,7 +64,7 @@
     <Content Include="DemoFormProject\static\Pics\barGraphAirbnb.png" />
     <Content Include="DemoFormProject\static\Pics\crimeRatesBarGraph.png" />
     <Content Include="DemoFormProject\static\Pics\crimeRatesMap.png" />
-    <Content Include="DemoFormProject\static\Pics\newYorkMap.png" />
+    <Content Include="DemoFormProject\static\Pics\newYorkMap.PNG" />
     <Content Include="DemoFormProject\static\Pics\newYorkPic.png" />
     <Content Include="DemoFormProject\static\Pics\NYC1.jpeg" />
     <Content Include="DemoFormProject\static\Pics\NYC2.jpg" />
