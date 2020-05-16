@@ -106,7 +106,7 @@ def Query():
     Name = None
     Country = ''
     capital = ''
-    dr = pd.read_csv(path.join(path.dirname(__file__), 'static\\Data\\nyc-rolling-sales.csv'))
+    dr = pd.read_csv(path.join(path.dirname(__file__), 'static/Data/nyc-rolling-sales.csv'))
     rollingSalesAdresses = dr['ADDRESS']
 
     def findLongLat(address):
